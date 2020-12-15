@@ -1,0 +1,44 @@
+@media only screen and (max-width: 600px) {
+    #button1{
+        margin: 1%;
+        margin-top: 1%;
+    }
+    #button2{
+        margin: 1%;
+        margin-top: 1%;
+    }
+    #button3{
+        margin: 1%;
+        margin-top: 1%;
+    }
+    #tablediv{
+        margin-left: 0rem;
+    }
+    #cards{
+        display: inline-flex;
+    }
+    #cards1{
+        display: block;
+        margin-left: 25%;
+    }
+  }
+  @media only screen and (min-width: 768px) {
+#tablediv{
+    margin-left: 5.5rem;
+}
+#cards1{
+    display: none;
+}
+#table1{
+    margin-left: 20rem;
+}
+#buttons{
+    margin-left: 17rem;
+}
+#list1{
+    margin-left: 25rem;
+}
+  }
+#btn{
+    padding: 1%;
+}

@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="newletter.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <title>Newletter Theme</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark pb-0 pt-0 pl-5 pr-5">
+        <div class="container">
+        <a class="navbar-brand" href="#">Blogen</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Dashboard <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="posts.html">Posts</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="categories.html">Categories</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="users.html">Users</a>
+            </li>
+            <li class="nav-item dropdown" id="list1">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="fas fa-user">   Welcome Himanshu</i>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#"><i class="fas fa-user">   Profile</i></a>
+                  <a class="dropdown-item" href="#"><i class="fas fa-user-cog">   Settings</i></a>
+                </div>
+              </li>
+            <li class="nav-item">
+                <a class="nav-link" href="logout.html">Logout</a>
+            </li>
+
+        </ul>
+        </div>
+    </div>
+      </nav>
+
+      <header id="main-header" class="py-2 bg-primary text-white px-5">
+          <div class="conatiner">
+              <div class="row">
+                  <div class="col-md-6">
+                      <h1>
+                        <i class="fas fa-cog">   Dashboard</i> 
+                      </h1>
+                  </div>
+              </div>
+          </div>
+      </header>
+      <div class="container mt-3">
+          <div class="container">
+            <div class="row" id="buttons">  
+            <div class="btn btn-primary col-md-2 ml-2" id="button1" data-toggle="modal" data-target="#exampleModal"><i class="fas fa-plus"></i>  Add Post</div>
+          <div class="btn btn-success col-md-2 ml-2" id="button2" data-toggle="modal" data-target="#exampleModal1"><i class="fas fa-plus"></i>  Add Category</div>
+          <div class="btn btn-warning col-md-2 ml-2" id="button3" data-toggle="modal" data-target="#exampleModal2"><i class="fas fa-plus"></i>  Add User</div> 
+        </div>
+      </div>
+    </div>
+      <div class="d-flex mt-4" id="table1"> 
+      <div class="container col-md-6" id="tablediv">
+        <table class="table table-striped table-responsive" id="table2" cellspacing="0" cellpadding="0">
+          <thead class="thead-dark">
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Title</th>
+              <th scope="col">Category</th>
+              <th scope="col">Date</th>
+              <th scope="col"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Post one</td>
+              <td>Web development</td>
+              <td>12/11/2012</td>
+              <td><button type="button" class="btn btn-secondary" id="btn">Details</button></td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Post two</td>
+              <td>Tech gadgets</td>
+              <td>11/12/2012</td>
+              <td><button type="button" class="btn btn-secondary" id="btn">Details</button></td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Larry</td>
+              <td>the Bird</td>
+              <td>@twitter</td>
+              <td><button type="button" class="btn btn-secondary" id="btn">Details</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="container col" id="cards">
+      <div class="flex-column d-none d-lg-block">
+      <div class="card bg-primary text-center" style="width: 10rem; height: 8rem;">
+        <div class="card-body">
+          <h5 class="card-title">Posts</h5>
+          <i class="fas fa-pencil-alt"></i>
+          <br>
+          <button type="button" class="btn btn-outline-light btn-sm mt-1">View</button>
+
+        </div>
+      </div>
+      <div class="card mt-2 bg-success text-center" style="width: 10rem; height: 8rem;">
+        <div class="card-body">
+          <h5 class="card-title">Categories</h5>
+          <i class="fas fa-folder"></i>
+          <br>
+          <button type="button" class="btn btn-outline-light btn-sm mt-1">View</button>
+        </div>
+      </div>
+          <div class="card mt-2 bg-warning text-center" style="width: 10rem; height: 8rem;">
+        <div class="card-body">
+          <h5 class="card-title">Users</h5>
+          <i class="fa fa-users" aria-hidden="true"></i>
+          <br>
+          <button type="button" class="btn btn-outline-light btn-sm mt-1">View</button>
+        </div> 
+      </div>
+  </div>
+</div>
+
+</div>
+<div class="container col" id="cards1">
+  <div class="flex-column">
+  <div class="card bg-primary text-center" style="width: 10rem; height: 8rem;">
+    <div class="card-body">
+      <h5 class="card-title">Posts</h5>
+      <i class="fas fa-pencil-alt"></i>
+      <br>
+      <button type="button" class="btn btn-outline-light btn-sm mt-1">View</button>
+    </div>
+  </div>
+  <div class="card mt-2 bg-success" style="width: 10rem; height: 8rem;">
+    <div class="card-body text-center">
+      <h5 class="card-title">Categories</h5>
+      <i class="fas fa-folder"></i>
+          <br>
+          <button type="button" class="btn btn-outline-light btn-sm mt-1">View</button>
+    </div>
+  </div>
+      <div class="card mt-2 bg-warning" style="width: 10rem; height: 8rem;">
+    <div class="card-body text-center">
+      <h5 class="card-title">Users</h5>
+      <i class="fa fa-users" aria-hidden="true"></i>
+          <br>
+          <button type="button" class="btn btn-outline-light btn-sm mt-1">View</button>
+    </div>
+  </div>
+</div>
+</div>
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="recipient-name" class="col-form-label">Title</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          <div class="form-group">
+            <label for="recipient-name" class="col-form-label">Category</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          <div class="custom-file">
+            <input type="file" id="myfile" class="custom-file-input">
+            <label class="custom-file-label" for="myfile">Choose File</label>
+          </div>
+          <div class="form-group">
+            <label for="message-text" class="col-form-label">Post body:</label>
+            <textarea class="form-control" id="message-text" style="height: 7rem;"></textarea>
+          </div>
+          
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Post</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="recipient-name" class="col-form-label">Title</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-success">Add category</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="recipient-name" class="col-form-label">Name</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          <div class="form-group">
+            <label for="recipient-name" class="col-form-label">Email</label>
+            <input type="email" class="form-control" id="recipient-name">
+          </div>
+          <div class="form-group">
+            <label for="message-text" class="col-form-label">Password</label>
+            <input type="password" id="message-text" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="message-text" class="col-form-label">Confirm password</label>
+            <input type="password" id="message-text" class="form-control">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-warning">Add user</button>
+      </div>
+    </div>
+  </div>
+</div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

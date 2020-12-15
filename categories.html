@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="posts.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <title>Posts</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark pb-0 pt-0 pl-5 pr-5">
+        <div class="container">
+        <a class="navbar-brand" href="index.html">Blogen</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Dashboard <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="posts.html">Posts</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Categories</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="users.html">Users</a>
+            </li>
+            <li class="nav-item dropdown" id="list1">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="fas fa-user">   Welcome Himanshu</i>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#"><i class="fas fa-user">   Profile</i></a>
+                  <a class="dropdown-item" href="#"><i class="fas fa-user-cog">   Settings</i></a>
+                </div>
+              </li>
+            <li class="nav-item">
+                <a class="nav-link" href="logout.html">Logout</a>
+            </li>
+
+        </ul>
+        </div>
+    </div>
+      </nav>
+
+      <header id="main-header" class="py-2 bg-primary text-white px-5">
+          <div class="conatiner">
+              <div class="row">
+                  <div class="col-md-6">
+                      <h1>
+                        <i class="fa fa-pencil-alt" aria-hidden="true">  Posts</i> 
+                      </h1>
+                  </div>
+              </div>
+          </div>
+      </header>
+      <div class="container" id="searchbar">
+        <form class="form-inline"> 
+            <input class="form-control mr-sm-2" type="search" placeholder="Category" aria-label="Search">
+            <button class="btn btn-outline-success mt-2" type="submit">Search</button>
+          </form>
+      </div>
+      <div class="container col-md-4 mt-2" id="tablediv">
+        <table class="table table-striped table-responsive" id="table2" cellspacing="0" cellpadding="0">
+          <thead class="thead-dark">
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Title</th>
+              <th scope="col">Category</th>
+              <th scope="col">Date</th>
+              <th scope="col"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Post one</td>
+              <td>Web development</td>
+              <td>12/11/2012</td>
+              <td><button type="button" class="btn btn-secondary" id="btn">Details</button></td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Post two</td>
+              <td>Tech gadgets</td>
+              <td>11/12/2012</td>
+              <td><button type="button" class="btn btn-secondary" id="btn">Details</button></td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Larry</td>
+              <td>the Bird</td>
+              <td>@twitter</td>
+              <td><button type="button" class="btn btn-secondary" id="btn">Details</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
